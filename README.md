@@ -16,6 +16,12 @@ A simple app for teachers to create students and adding their grades.
 - `Vibration` for success and errors
 - `DarkMode` support
 
+### Planned but not finished Features
+- Editing `Students`, `Grades` and `Grade Types`
+- Using MVVM Pattern
+  - Not possible as far as I know, due to `CoreData` *FetchRequest* not working with `ObservableObject`
+- Adding Unity Testing
+
 ## Frameworks, Librarys and SDKs
 - `SwiftUI`
 - `CoreData`
