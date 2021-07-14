@@ -128,8 +128,8 @@
 		CABF11A8269F5DA800641533 /* GradeTypesTab */ = {
 			isa = PBXGroup;
 			children = (
-				CABF11A9269F5DA800641533 /* GradeTypeSheetView.swift */,
 				CABF11AA269F5DA800641533 /* GradeTypesTabView.swift */,
+				CABF11A9269F5DA800641533 /* GradeTypeSheetView.swift */,
 			);
 			path = GradeTypesTab;
 			sourceTree = "<group>";
