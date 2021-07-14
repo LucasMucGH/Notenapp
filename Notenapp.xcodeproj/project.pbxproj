@@ -15,6 +15,14 @@
 		CABF11A3269F5BA400641533 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF11A1269F5BA400641533 /* Student.swift */; };
 		CABF11A4269F5BA400641533 /* GradeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF11A2269F5BA400641533 /* GradeType.swift */; };
 		CABF11A6269F5BB900641533 /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF11A5269F5BB900641533 /* Grade.swift */; };
+		CABF11B1269F5DA800641533 /* GradeTypeSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF11A9269F5DA800641533 /* GradeTypeSheetView.swift */; };
+		CABF11B2269F5DA800641533 /* GradeTypesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF11AA269F5DA800641533 /* GradeTypesTabView.swift */; };
+		CABF11B3269F5DA800641533 /* TabSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF11AB269F5DA800641533 /* TabSelectionView.swift */; };
+		CABF11B4269F5DA800641533 /* StudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF11AD269F5DA800641533 /* StudentView.swift */; };
+		CABF11B5269F5DA800641533 /* StudentSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF11AE269F5DA800641533 /* StudentSheetView.swift */; };
+		CABF11B6269F5DA800641533 /* StudentsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF11AF269F5DA800641533 /* StudentsTabView.swift */; };
+		CABF11B7269F5DA800641533 /* GradeSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF11B0269F5DA800641533 /* GradeSheetView.swift */; };
+		CABF11BA269F5E2200641533 /* SortBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF11B9269F5E2200641533 /* SortBy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +36,14 @@
 		CABF11A1269F5BA400641533 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		CABF11A2269F5BA400641533 /* GradeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeType.swift; sourceTree = "<group>"; };
 		CABF11A5269F5BB900641533 /* Grade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
+		CABF11A9269F5DA800641533 /* GradeTypeSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeTypeSheetView.swift; sourceTree = "<group>"; };
+		CABF11AA269F5DA800641533 /* GradeTypesTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeTypesTabView.swift; sourceTree = "<group>"; };
+		CABF11AB269F5DA800641533 /* TabSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabSelectionView.swift; sourceTree = "<group>"; };
+		CABF11AD269F5DA800641533 /* StudentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentView.swift; sourceTree = "<group>"; };
+		CABF11AE269F5DA800641533 /* StudentSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentSheetView.swift; sourceTree = "<group>"; };
+		CABF11AF269F5DA800641533 /* StudentsTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentsTabView.swift; sourceTree = "<group>"; };
+		CABF11B0269F5DA800641533 /* GradeSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeSheetView.swift; sourceTree = "<group>"; };
+		CABF11B9269F5E2200641533 /* SortBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortBy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				CABF118A269F5A4200641533 /* NotenappApp.swift */,
+				CABF11A7269F5D8000641533 /* Views */,
 				CABF119F269F5B6F00641533 /* Models */,
 				CABF118E269F5A4200641533 /* Assets.xcassets */,
 				CABF1198269F5A4200641533 /* Info.plist */,
@@ -80,8 +97,9 @@
 		CABF119F269F5B6F00641533 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CABF11A5269F5BB900641533 /* Grade.swift */,
 				CABF11A0269F5B7300641533 /* CoreData */,
+				CABF11A5269F5BB900641533 /* Grade.swift */,
+				CABF11B9269F5E2200641533 /* SortBy.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -95,6 +113,44 @@
 				CABF1195269F5A4200641533 /* Notenapp.xcdatamodeld */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		CABF11A7269F5D8000641533 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CABF11AB269F5DA800641533 /* TabSelectionView.swift */,
+				CABF11AC269F5DA800641533 /* StudentsTab */,
+				CABF11A8269F5DA800641533 /* GradeTypesTab */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CABF11A8269F5DA800641533 /* GradeTypesTab */ = {
+			isa = PBXGroup;
+			children = (
+				CABF11A9269F5DA800641533 /* GradeTypeSheetView.swift */,
+				CABF11AA269F5DA800641533 /* GradeTypesTabView.swift */,
+			);
+			path = GradeTypesTab;
+			sourceTree = "<group>";
+		};
+		CABF11AC269F5DA800641533 /* StudentsTab */ = {
+			isa = PBXGroup;
+			children = (
+				CABF11AF269F5DA800641533 /* StudentsTabView.swift */,
+				CABF11AE269F5DA800641533 /* StudentSheetView.swift */,
+				CABF11B8269F5DFD00641533 /* StudentViews */,
+			);
+			path = StudentsTab;
+			sourceTree = "<group>";
+		};
+		CABF11B8269F5DFD00641533 /* StudentViews */ = {
+			isa = PBXGroup;
+			children = (
+				CABF11AD269F5DA800641533 /* StudentView.swift */,
+				CABF11B0269F5DA800641533 /* GradeSheetView.swift */,
+			);
+			path = StudentViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,11 +222,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CABF11B6269F5DA800641533 /* StudentsTabView.swift in Sources */,
 				CABF1194269F5A4200641533 /* Persistence.swift in Sources */,
 				CABF1197269F5A4200641533 /* Notenapp.xcdatamodeld in Sources */,
+				CABF11B5269F5DA800641533 /* StudentSheetView.swift in Sources */,
+				CABF11B7269F5DA800641533 /* GradeSheetView.swift in Sources */,
+				CABF11B1269F5DA800641533 /* GradeTypeSheetView.swift in Sources */,
+				CABF11BA269F5E2200641533 /* SortBy.swift in Sources */,
 				CABF11A4269F5BA400641533 /* GradeType.swift in Sources */,
+				CABF11B3269F5DA800641533 /* TabSelectionView.swift in Sources */,
+				CABF11B2269F5DA800641533 /* GradeTypesTabView.swift in Sources */,
 				CABF11A6269F5BB900641533 /* Grade.swift in Sources */,
 				CABF11A3269F5BA400641533 /* Student.swift in Sources */,
+				CABF11B4269F5DA800641533 /* StudentView.swift in Sources */,
 				CABF118B269F5A4200641533 /* NotenappApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
