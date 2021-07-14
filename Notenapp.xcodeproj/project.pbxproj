@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		CABF118B269F5A4200641533 /* NotenappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF118A269F5A4200641533 /* NotenappApp.swift */; };
-		CABF118D269F5A4200641533 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF118C269F5A4200641533 /* ContentView.swift */; };
 		CABF118F269F5A4200641533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CABF118E269F5A4200641533 /* Assets.xcassets */; };
 		CABF1192269F5A4200641533 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CABF1191269F5A4200641533 /* Preview Assets.xcassets */; };
 		CABF1194269F5A4200641533 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF1193269F5A4200641533 /* Persistence.swift */; };
 		CABF1197269F5A4200641533 /* Notenapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CABF1195269F5A4200641533 /* Notenapp.xcdatamodeld */; };
+		CABF11A3269F5BA400641533 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF11A1269F5BA400641533 /* Student.swift */; };
+		CABF11A4269F5BA400641533 /* GradeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF11A2269F5BA400641533 /* GradeType.swift */; };
+		CABF11A6269F5BB900641533 /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF11A5269F5BB900641533 /* Grade.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CABF1187269F5A4200641533 /* Notenapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notenapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CABF118A269F5A4200641533 /* NotenappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotenappApp.swift; sourceTree = "<group>"; };
-		CABF118C269F5A4200641533 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CABF118E269F5A4200641533 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CABF1191269F5A4200641533 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CABF1193269F5A4200641533 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		CABF1196269F5A4200641533 /* Notenapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notenapp.xcdatamodel; sourceTree = "<group>"; };
 		CABF1198269F5A4200641533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CABF11A1269F5BA400641533 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		CABF11A2269F5BA400641533 /* GradeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeType.swift; sourceTree = "<group>"; };
+		CABF11A5269F5BB900641533 /* Grade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				CABF118A269F5A4200641533 /* NotenappApp.swift */,
-				CABF118C269F5A4200641533 /* ContentView.swift */,
+				CABF119F269F5B6F00641533 /* Models */,
 				CABF118E269F5A4200641533 /* Assets.xcassets */,
-				CABF1193269F5A4200641533 /* Persistence.swift */,
 				CABF1198269F5A4200641533 /* Info.plist */,
-				CABF1195269F5A4200641533 /* Notenapp.xcdatamodeld */,
 				CABF1190269F5A4200641533 /* Preview Content */,
 			);
 			path = Notenapp;
@@ -73,6 +75,26 @@
 				CABF1191269F5A4200641533 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CABF119F269F5B6F00641533 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CABF11A5269F5BB900641533 /* Grade.swift */,
+				CABF11A0269F5B7300641533 /* CoreData */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CABF11A0269F5B7300641533 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				CABF11A2269F5BA400641533 /* GradeType.swift */,
+				CABF11A1269F5BA400641533 /* Student.swift */,
+				CABF1193269F5A4200641533 /* Persistence.swift */,
+				CABF1195269F5A4200641533 /* Notenapp.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +167,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CABF1194269F5A4200641533 /* Persistence.swift in Sources */,
-				CABF118D269F5A4200641533 /* ContentView.swift in Sources */,
 				CABF1197269F5A4200641533 /* Notenapp.xcdatamodeld in Sources */,
+				CABF11A4269F5BA400641533 /* GradeType.swift in Sources */,
+				CABF11A6269F5BB900641533 /* Grade.swift in Sources */,
+				CABF11A3269F5BA400641533 /* Student.swift in Sources */,
 				CABF118B269F5A4200641533 /* NotenappApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
